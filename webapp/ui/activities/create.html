@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Activity</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+  <h2>Create Activity</h2>
+
+  <form id="createForm">
+    <div class="mb-3">
+      <label class="form-label">Deal ID</label>
+      <input type="number" class="form-control" id="dealId" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Activity Type</label>
+      <select class="form-control" id="type" required>
+        <option>CALL</option>
+        <option>MEETING</option>
+        <option>TASK</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Description</label>
+      <textarea class="form-control" id="description" required></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Due Date</label>
+      <input type="date" class="form-control" id="dueDate" required>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="list.html" class="btn btn-secondary">Back</a>
+  </form>
+</div>
+
+<script src="js/create.js"></script>
+
+</body>
+</html>

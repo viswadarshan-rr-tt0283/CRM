@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Contact</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+  <h2>Create Contact</h2>
+
+  <form id="createForm">
+
+    <div class="mb-3">
+      <label class="form-label">Company ID</label>
+      <input id="companyId" class="form-control" type="number" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input id="name" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input id="email" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Phone</label>
+      <input id="phone" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Job Title</label>
+      <input id="jobTitle" class="form-control">
+    </div>
+
+    <button class="btn btn-success" type="submit">Save</button>
+    <a href="list.html" class="btn btn-secondary">Back</a>
+  </form>
+</div>
+
+<script src="js/create.js"></script>
+
+</body>
+</html>

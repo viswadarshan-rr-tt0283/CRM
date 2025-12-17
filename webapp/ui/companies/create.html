@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Create Company</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+  <h2>Create Company</h2>
+
+  <form id="createForm">
+
+    <div class="mb-3">
+      <label class="form-label">Company Name</label>
+      <input id="name" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input id="email" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Phone</label>
+      <input id="phone" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Address</label>
+      <textarea id="address" class="form-control"></textarea>
+    </div>
+
+    <button class="btn btn-success" type="submit">Save</button>
+    <a href="list.html" class="btn btn-secondary">Back</a>
+  </form>
+</div>
+
+<script src="js/create.js"></script>
+
+</body>
+</html>

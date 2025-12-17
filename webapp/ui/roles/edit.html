@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Role</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 6px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .permissions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .perm-item {
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .actions {
+      margin-top: 20px;
+      text-align: right;
+    }
+    button {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Edit Role</h2>
+
+  <div>
+    <strong>Role Name:</strong>
+    <span id="roleName" style="margin-left:8px;font-weight:600"></span>
+  </div>
+
+  <h3>Permissions</h3>
+  <div id="permissions" class="permissions"></div>
+
+  <div class="actions">
+    <button onclick="saveRole()">Save Changes</button>
+    <button onclick="history.back()">Cancel</button>
+  </div>
+</div>
+
+<script src="js/edit.js"></script>
+</body>
+</html>

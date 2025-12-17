@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Activity View</title>
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+  <a href="list.html" class="btn btn-link mb-3">← Back to Activities</a>
+
+  <!-- Activity Summary -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4 id="activityTitle"></h4>
+      <p class="text-muted" id="activityMeta"></p>
+      <p id="activityDescription"></p>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mb-3">
+    <li class="nav-item">
+      <button class="nav-link active" onclick="showTab(event, 'deal')">
+        Deal
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" onclick="showTab(event, 'company')">
+        Company
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" onclick="showTab(event, 'contacts')">
+        Contacts
+      </button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="card">
+    <div class="card-body" id="tabContent"></div>
+  </div>
+
+</div>
+
+<script src="js/view.js"></script>
+</body>
+</html>

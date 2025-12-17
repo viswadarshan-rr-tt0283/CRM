@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Users</h2>
+    <a href="create.html" class="btn btn-success">Create User</a>
+  </div>
+
+  <!-- ADMIN TABLE -->
+  <h4 class="mt-4">Admins</h4>
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Full Name</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="adminTable"></tbody>
+  </table>
+
+  <!-- MANAGER TABLE -->
+  <h4 class="mt-5">Managers</h4>
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Full Name</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="managerTable"></tbody>
+  </table>
+
+  <!-- SALES TABLE -->
+  <h4 class="mt-5">Sales Users</h4>
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Full Name</th>
+      <th>Manager</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="salesTable"></tbody>
+  </table>
+
+</div>
+
+<script src="js/list.js"></script>
+</body>
+</html>

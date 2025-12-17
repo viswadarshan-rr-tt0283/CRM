@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Deal Details</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-4">
+
+  <!-- Header -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <h3 id="dealTitle"></h3>
+      <p class="text-muted mb-0">
+        Deal ID: <span id="dealId"></span>
+      </p>
+    </div>
+
+    <div>
+      <select id="statusSelect"
+              class="form-select d-inline-block w-auto">
+      </select>
+    </div>
+  </div>
+
+  <!-- Deal Information -->
+  <div class="card mb-4">
+    <div class="card-header fw-semibold">Deal Information</div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>Amount:</strong> ₹<span id="dealAmount"></span></p>
+          <p><strong>Status:</strong> <span id="dealStatus"></span></p>
+          <p><strong>Company:</strong> <span id="companyName"></span></p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Assigned To:</strong> <span id="assignedUser"></span></p>
+          <p><strong>Created At:</strong> <span id="createdAt"></span></p>
+          <p><strong>Contact:</strong> <span id="contactName"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Activities -->
+  <div class="card">
+    <div class="card-header fw-semibold">Activities</div>
+    <ul class="list-group list-group-flush" id="activityList">
+      <!-- Filled by JS -->
+    </ul>
+  </div>
+
+</div>
+
+<script src="js/view.js"></script>
+</body>
+</html>

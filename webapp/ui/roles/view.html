@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Role View</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+  <!-- Header -->
+  <div class="mb-4">
+    <h3 id="roleName">Role</h3>
+    <span class="badge bg-secondary" id="roleBadge">SYSTEM ROLE</span>
+  </div>
+
+  <!-- Summary -->
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h6 class="text-muted">Total Permissions</h6>
+          <h4 id="permissionCount">0</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h6 class="text-muted">Role Description</h6>
+          <p class="mb-0" id="roleDescription">
+            This role defines access rules inside the CRM.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Permissions -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-header bg-white">
+      <strong>Permissions</strong>
+    </div>
+    <div class="card-body" id="permissionContainer">
+      Loading permissions...
+    </div>
+  </div>
+
+  <!-- Actions -->
+  <div class="d-flex justify-content-between">
+    <a href="list.html" class="btn btn-secondary">
+      Back
+    </a>
+    <div>
+      <a id="editBtn" class="btn btn-primary">
+        Edit Role
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/view.js"></script>
+</body>
+</html>
